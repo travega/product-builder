@@ -282,6 +282,10 @@ Step content - basic style
   animation: cd-left-to-center .5s .2s backwards;
 }
 
+.total-muted {
+  display: none;
+}
+
 @media only screen and (max-width: 1024px) {
 
   .cd-builder-footer.disabled,
