@@ -1,5 +1,5 @@
 jQuery(document).ready(function ($) {
-	if ($(this).width() < 1024) {
+	if ($(this).width() > 1024) {
 		var el = $(".tot-price > .total");
 		el.addClass("total-muted");
 		el.removeClass("total");
