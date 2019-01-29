@@ -14,7 +14,7 @@ jQuery(document).ready(function ($) {
 		el.removeClass("total-muted");
 		el.addClass("total");
 
-		var buy = $(".buy > .total");
+		var buy = $(".buy > .total-muted");
 		if (buy) {
 			buy.addClass("total-muted");
 			buy.removeClass("total");
