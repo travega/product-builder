@@ -1,24 +1,24 @@
 jQuery(document).ready(function ($) {
 	if ($(this).width() < 1024) {
-		var el = $(".tot-price > .total");
+		var el = $(".tot-price .total");
 		if (el.length) {
 			el.addClass("total-muted");
 			el.removeClass("total");
 		}
 
-		var buy = $(".buy > .total-muted");
+		var buy = $(".buy .total-muted");
 		if (buy.length) {
 			buy.removeClass("total-muted");
 			buy.addClass("total");
 		}
 	} else {
-		var el = $(".tot-price > .total-muted");
+		var el = $(".tot-price .total-muted");
 		if (el.length) {
 			el.removeClass("total-muted");
 			el.addClass("total");
 		}
 
-		var buy = $(".buy > .total");
+		var buy = $(".buy .total");
 		if (buy.length) {
 			buy.addClass("total-muted");
 			buy.removeClass("total");
