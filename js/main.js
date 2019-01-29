@@ -10,7 +10,7 @@ jQuery(document).ready(function ($) {
 		//bottom summary 
 		this.fixedSummary = this.element.find('.cd-builder-footer');
 		this.modelPreview = this.element.find('.selected-product').find('img');
-		this.totPriceWrapper = this.element.findAll('.total').find('b');
+		this.totPriceWrapper = this.element.find('.total').find('b');
 		//builder navigations
 		this.mainNavigation = this.element.find('.cd-builder-main-nav');
 		this.secondaryNavigation = this.element.find('.cd-builder-secondary-nav');
