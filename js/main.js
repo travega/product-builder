@@ -1,4 +1,26 @@
 jQuery(document).ready(function ($) {
+	if ($(this).width() < 1024) {
+		var el = $(".tot-price > .total");
+		el.addClass("total-muted");
+		el.removeClass("total");
+
+		var buy = $(".buy > .total");
+		if (buy) {
+			buy.removeClass("total-muted");
+			buy.addClass("total");
+		}
+	} else {
+		var el = $(".tot-price > .total-muted");
+		el.removeClass("total-muted");
+		el.addClass("total");
+
+		var buy = $(".buy > .total");
+		if (buy) {
+			buy.addClass("total-muted");
+			buy.removeClass("total");
+		}
+	}
+
 	function ProductBuilder(element) {
 		this.element = element;
 		this.stepsWrapper = this.element.children('.cd-builder-steps');
